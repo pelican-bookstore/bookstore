@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
+    parallelism: 24
     steps:
       - checkout # special step to check out source code to working directory
 
